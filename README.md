@@ -14,17 +14,17 @@
 - JavaScript (ES6+)
 
 ## 📂 Estrutura de Pastas
-📦 fp-app
- ┣ 📂 data
- ┃ ┗ 📜 data.js        # Dados dos carros
- ┣ 📂 assets
- ┃ ┗ 🖼️ imagens        # Imagens dos carros
- ┣ 📂 css
- ┃ ┗ 📜 style.css      # Estilos e animações
- ┣ 📂 js
- ┃ ┗ 📜 script.js      # Lógica do app
- ┣ 📜 index.html       # Página principal
- ┗ 📜 README.md        # Documentação do projeto
+-📦 fp-app
+- ┣ 📂 data
+- ┃ ┗ 📜 data.js        # Dados dos carros
+- ┣ 📂 assets
+- ┃ ┗ 🖼️ imagens        # Imagens dos carros
+- ┣ 📂 css
+- ┃ ┗ 📜 style.css      # Estilos e animações
+- ┣ 📂 js
+- ┃ ┗ 📜 script.js      # Lógica do app
+- ┣ 📜 index.html       # Página principal
+- ┗ 📜 README.md        # Documentação do projeto
 
 
 ## 🚀 Como Usar
