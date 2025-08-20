@@ -60,7 +60,7 @@ function renderCars() {
         <h4 class="car-information">${car.subtitle}</h4>
         <h2>${car.title}</h2>
         <p class="description">${car.description}</p>
-        <button class="information">Saiba Mais</button>
+        <button id="button" class="information">Saiba Mais</button>
       </div>
     `;
     listEl.appendChild(item);
