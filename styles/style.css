@@ -50,11 +50,13 @@ section {
     margin: auto;
     position: relative;
 
+    --calculation: 1;
+
     & .item {
       position: absolute;
       inset: 0;
 
-      transform: translateX(100vw);
+      transform: translateX(calc(100vw * var(--calculation)));
       transition: 0.7s;
       opacity: 0;
 
@@ -72,6 +74,19 @@ section {
           transition: 0.7s;
           transition-delay: 0.3s;
         }
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: #252525;
+          width: 90%;
+          height: 70px;
+          top: 150%;
+          left: 80px;
+          border: 100%;
+          filter: blur(50px);
+          transition: 0.7s;
+
+        }
       }
 
       & .content {
@@ -86,9 +101,10 @@ section {
         gap: 20px;
 
         & .car-information, h2, .description, .information {
-          transform: translateX(200px);
+          transform: translateX(calc(200px * var(--calculation)));
           transition: 0.7s;
           transition-delay: 0.3s;
+          opacity: 0;
         }
 
         & .car-information {
@@ -143,7 +159,8 @@ section {
       }
       & .content {        
         & .car-information, h2, .description, .information {
-          transform: translateX(0);          
+          transform: translateX(0);  
+          opacity: 1;        
         }
       }
     }
@@ -227,9 +244,10 @@ section {
         display: flex;
         gap: 10px;
         & li {
-          width: 50px;
-          height: 5px;
+          width: 25px;
+          height: 6px;
           background-color: #beff1b;
+          cursor: pointer;
           border-radius: 5px;
           transition: 0.7s;
           
